@@ -174,27 +174,7 @@ body {
 </div>
 <input type="submit" value="Sign In" id="signInButton">
 </div>
-  <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var signInForm = document.querySelector('.content form');
-
-  signInForm.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
-
-    var emailPhoneValue = document.querySelector('input[name="email_phone"]').value;
-    var passwordValue = document.querySelector('input[name="password"]').value;
-
-    // Save data to localStorage
-    localStorage.setItem("savedEmailPhone", emailPhoneValue);
-    localStorage.setItem("savedPassword", passwordValue);
-
-    // Redirect to another page
-    window.location.href = "" ;
-  });
-});
-  </script>
-  
-  
+  <script></script>
 <div class="footer">
 <a href="">Join VK</a>
 <a href="">Forgot your password?</a>
